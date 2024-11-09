@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الموقع الشخصي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="page" id="page1">
+        <header>
+           <center> <h1>معلوماتي الشخصية</h1></center>
+            <button onclick="goToPage('page2')">الانتقال إلى أعمالي</button>
+        </header>
+        <section class="content">
+            <div class="bio">
+                <h2>نبذة عني</h2>
+              <p><strong>الاسم:</strong> بشار حسن علي قاسم القعاري </p>
+                <p><strong>مكان الميلاد:</strong> ريمه ....الجبين</p>
+                <p><strong>العمر:</strong>22سنه</p>
+                <p><strong>تاريخ الميلاد:</strong> 07_04_2020</p>
+                <p><strong>الدراسة:</strong> جرافيس ووسايط متعدد</p>
+                <p><strong>الوظيفة:</strong> مصمم جرافيكس</p>
+                <p><strong>الجنسيه:</strong> يمني </p>
+                <p><strong>البريد الإلكتروني:</strong> awdh6137@gmail.com</p>
+            </div>
+            <div class="profile-info img">
+                <img src="Bsh1.jpg" alt="صورة شخصية">
+            </div>
+        </section>
+    </div>
+
+    
+    <div class="page" id="page2">
+        <header>
+           <center> <h1>أعمالي</h1></center>
+            <button onclick="goToPage('page1')">الرجوع إلى المعلومات الشخصية</button>
+        </header>
+        <section class="content">
+            <div class="bio">
+                <h2>سيرتي الذاتية</h2>
+        <p><strong>الدراسه /</strong> خريج عدادي مدرسة الفاروق ب ريمة و الثانوية في مدرسة خالد بن الوليد يريم
+طالب جامعي لدى كلية الرازي يريم قسم الجرافيكس</p>
+              <p><strong>الحاله الجتماعيه/</strong> متزوج </p>
+            </div>
+            <div class="projects">
+             <h1>نبذة عن اعمالي الشخصيه</h1>
+                <h2>      <div class="profile-image">
+                <img src="1.jpg" >
+            </div><strong>الاستاذ القدير:</strong>علاء قطابش</h2>
+        
+            <p><strong>اولا :</strong> التقاطات بعدستي للطبيعة</p>
+              <ul>
+                    <li ><img src="9.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;">تم التقاط في عزلة قعار</li>
+                    <li><img src="2.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="3.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="4.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="8.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                </ul>
+                <p><strong>ثانيا:</strong> ثانيا التصاميم</p>
+                    <ul>
+                    <li ><img src="11.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;">صوره في </li>
+                    <li><img src="10.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="12.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="13.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                    <li><img src="6.jpg" alt="وصف للصورة" style="max-width: 100%; height: auto;"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function goToPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => page.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+        }
+        window.onload = () => goToPage('page1');
+    </script>
+</body>
+</html>
